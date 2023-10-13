@@ -1,17 +1,20 @@
 ## Title of my Table
 Rental Car
 
-## Table Primary Key
-id 
+## Columns
+## Primary Key
+id | TINYINT, NOTNULL, UNIQUE, AUTO_INCREMENT
 
-## Table Non-key attributes
-location
-plate_id
-color
-brand
-model
-description
-registration_year
-fuel
-mileage
-price 
+## Non-key attributes
+location | TINYINT(5), NULL
+plate_id | VARCHAR(10), NULL, UNIQUE
+color | VARCHAR(45), NOTNULL
+brand | VARCHAR(45), NOTNULL
+model | VARCHAR(45), NOTNULL
+description | TEXT, NULL
+registration_year | TIMESTAMP(YYYY-MM), NOTNULL
+gearbox | VARCHAR(20), NOTNULL
+fuel | VARCHAR(20), NOTNULL
+mileage | MEDIUMINT (300000), NULL
+price | MEDIUMINT (4000000), NOTNULL
+availability | VARCHAR(3), NOTNULL
